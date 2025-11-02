@@ -1,5 +1,5 @@
 FROM golang:1.18-alpine AS builder
-RUN go install tailscale.com/cmd/derper@main
+RUN go install tailscale.com/cmd/derper@latest
 
 FROM tailscale/tailscale:latest
 WORKDIR /app
